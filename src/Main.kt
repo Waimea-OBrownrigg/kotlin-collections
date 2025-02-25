@@ -39,5 +39,16 @@ fun main() {
     for (snack in snacks) {
         println(snack)
     }
+
+    println("Snacks contains dark chocolate ${snacks.contains("dark chocolate")}")
+    println("Snacks contains white chocolate ${snacks.contains("white chocolate")}")
+
+    println("Dark chocolate index: ${snacks.indexOf("dark chocolate")}")
+
+    for (i in 0 ..< snacks.size)
+        println("$i: ${snacks[i]}")
+
+    for ((i, snack) in snacks.withIndex())
+        println("$i: ${snacks[i]}")
 }
 
